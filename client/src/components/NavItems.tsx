@@ -63,7 +63,7 @@ function NavItems() {
   return (
     <Container>
       <NavItem>
-        <a href="#home">Home</a>
+        <a href="/">Home</a>
       </NavItem>
       <NavItem>
         <a href="#cars">Cars</a>
