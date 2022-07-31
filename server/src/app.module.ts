@@ -5,6 +5,7 @@ import { GraphQLModule } from '@nestjs/graphql'
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
 import { ComponentsModule } from './Components/components.module';
+import { ServeStaticModule } from '@nestjs/serve-static';
 
 
 @Module({
@@ -14,7 +15,10 @@ import { ComponentsModule } from './Components/components.module';
     debug:true,
     autoSchemaFile: join(process.cwd(), 'src/schema.gql')
   }),
-  ComponentsModule
+    ComponentsModule,
+    ServeStaticModule.forRoot({
+    rootPath: join(__dirname, '..', 'client','build')
+  })
 ],
   controllers: [],
   providers: [],

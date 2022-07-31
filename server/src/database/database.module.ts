@@ -6,14 +6,13 @@ import { Connection } from 'typeorm';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
+      host: 'us-cdbr-east-06.cleardb.net',
       port: 3306,
-      username: 'root',
-      password: 'password',
-      database: 'rentcar',
+      username: 'b804905095c658',
+      password: '92f0b026',
+      database: 'heroku_fff23362fb26883',
       entities: ['dist/**/entities/*{.ts,.js}'],
       migrations: ['dist/migrations/*{.ts,.js}'],
-      synchronize: true,
     }),
   ],
   exports: [TypeOrmModule],
@@ -25,3 +24,5 @@ export class DatabaseModule {
     }
   }
 }
+
+
