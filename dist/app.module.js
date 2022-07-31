@@ -27,6 +27,10 @@ AppModule = __decorate([
                 playground: true,
                 debug: true,
                 autoSchemaFile: (0, path_1.join)(process.cwd(), 'src/schema.gql'),
+                cors: {
+                    credentials: true,
+                    origin: true
+                }
             }),
             components_module_1.ComponentsModule,
             serve_static_1.ServeStaticModule.forRoot({

@@ -17,6 +17,10 @@ import { ServeStaticModule } from '@nestjs/serve-static';
       playground: true,
       debug: true,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      cors: {
+        credentials: true,
+        origin:true
+      }
     }),
     ComponentsModule,
     ServeStaticModule.forRoot({
