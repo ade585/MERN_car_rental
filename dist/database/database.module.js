@@ -30,7 +30,7 @@ DatabaseModule = __decorate([
                 username: 'b804905095c658',
                 password: '92f0b026',
                 database: 'heroku_fff23362fb26883',
-                entities: ['dist/**/entities/*{.ts,.js}'],
+                entities: ['dist/**/**/entities/*{.ts,.js}'],
                 migrations: ['dist/migrations/*{.ts,.js}'],
             }),
         ],

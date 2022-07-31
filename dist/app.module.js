@@ -30,7 +30,7 @@ AppModule = __decorate([
             }),
             components_module_1.ComponentsModule,
             serve_static_1.ServeStaticModule.forRoot({
-                rootPath: (0, path_1.join)(__dirname, '../../', 'client/build')
+                rootPath: (0, path_1.join)(__dirname, '../', 'client/build')
             }),
         ],
         controllers: [],

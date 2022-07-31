@@ -20,7 +20,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
     }),
     ComponentsModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../../', 'client/build')
+      rootPath: join(__dirname, '../', 'client/build')
     }),
   ],
   controllers: [],
