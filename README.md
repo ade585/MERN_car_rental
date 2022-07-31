@@ -1,4 +1,4 @@
-#  :blue_car: Cart-it 
+#  :blue_car: Rentcar
 
 Hello guys, Presenting a MERN app with backend of NestJS and React Frontend with graphQL API. The application is a car renting service from which you can choose your favourite cars and rent them from a location near you using the map under each car which is integrated via leafletJS. 
 
