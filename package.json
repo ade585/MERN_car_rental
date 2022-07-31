@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "build": "npm --prefix client install && NODE_ENV=production npm --prefix client run build && npm --prefix server install && NODE_ENV=production npm --prefix server run build",
+      "build": "npm --prefix client install && NODE_ENV=production npm --prefix client run build && npm --prefix server install -f && NODE_ENV=production npm --prefix server run build",
       "deploy": "cp -a client/build/. public/",
       "heroku-postbuild": "npm run build && npm run deploy",
-      "heroku-prebuild": "npm --prefix client install && npm --prefix server install "
+      "heroku-prebuild": "npm --prefix client install && npm --prefix server install -f "
   },
   "repository": {
     "type": "git",
