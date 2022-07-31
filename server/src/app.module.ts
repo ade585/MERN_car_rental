@@ -9,18 +9,22 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 
 
 @Module({
-  imports: [ConfigModule.forRoot(), DatabaseModule, GraphQLModule.forRoot<ApolloDriverConfig>({
-    driver: ApolloDriver,
-    playground:true,
-    debug:true,
-    autoSchemaFile: join(process.cwd(), 'src/schema.gql')
-  }),
+  imports: [
+    ConfigModule.forRoot(),
+    DatabaseModule,
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
+      playground: true,
+      debug: true,
+      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+    }),
     ComponentsModule,
     ServeStaticModule.forRoot({
-    rootPath: join(__dirname, '..', 'client','build')
-  })
-],
+      rootPath: join(__dirname, '../../', 'client/build')
+    }),
+  ],
   controllers: [],
   providers: [],
 })
 export class AppModule {}
+

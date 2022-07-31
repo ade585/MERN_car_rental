@@ -19,16 +19,20 @@ let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [config_1.ConfigModule.forRoot(), database_module_1.DatabaseModule, graphql_1.GraphQLModule.forRoot({
+        imports: [
+            config_1.ConfigModule.forRoot(),
+            database_module_1.DatabaseModule,
+            graphql_1.GraphQLModule.forRoot({
                 driver: apollo_1.ApolloDriver,
                 playground: true,
                 debug: true,
-                autoSchemaFile: (0, path_1.join)(process.cwd(), 'src/schema.gql')
+                autoSchemaFile: (0, path_1.join)(process.cwd(), 'src/schema.gql'),
             }),
             components_module_1.ComponentsModule,
             serve_static_1.ServeStaticModule.forRoot({
-                rootPath: (0, path_1.join)(__dirname, '..', 'client', 'build')
-            })],
+                rootPath: (0, path_1.join)(__dirname, '../../', 'client/build')
+            }),
+        ],
         controllers: [],
         providers: [],
     })
