@@ -10,6 +10,6 @@ async function bootstrap() {
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     credentials:true
   });
-  await app.listen(process.env.PORT || 4000);
+  await app.listen(process.env.PORT || 4000,()=>console.log(`APP RUNNING ON PORT ${process.env.PORT}`));
 }
 bootstrap();
