@@ -164,6 +164,7 @@ const SmallText = styled.span`
 
 
 const Car = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>({});
   const carId: string = useLocation().pathname.split('/')[2];
   useEffect(() => {
@@ -215,7 +216,7 @@ const Car = () => {
                   icon={faTachometerAlt}
                 />
                 <SpecInnerContainer>
-                  <Spec>200</Spec>
+                  <Spec>{data.gas}</Spec>
                   <SmallText>km/h</SmallText>
                 </SpecInnerContainer>
               </SpecContainer>
@@ -258,7 +259,7 @@ const Car = () => {
                 className='text-2xl text-primary mr-2'
                 icon={faLocationDot}
               />
-              13060 Iron Bridge Park Rd Moody, Texas(TX), 76557
+              101 Paris, France
             </Desc>
             <Map />
             <RenderModal dailyPrice={data.dailyPrice} monthlyPrice={data.monthlyPrice} />

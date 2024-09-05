@@ -72,11 +72,25 @@ npm install # or, yarn install
 npm run heroku-postbuild
 ```
 
-4. Run the app
+5. Run the app
 
 ```bash
 npm run start:dev
 ```
+
+6. Run the DEV app
+
+```bash
+
+
+#launch Client
+cd .\client\ 
+npm run start
+Then ...
+# launche Server
+npm run start
+```
+
 
 http://localhost:3000/graphql
 
