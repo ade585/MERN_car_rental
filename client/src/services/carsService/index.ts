@@ -1,3 +1,4 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 import { GET_ALL_CARS, GET_CARS, GET_CAR } from './queries';
 import { apolloClient } from '../graphql';
 import { GetCars } from './Requests/GetCars';

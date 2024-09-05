@@ -1,3 +1,4 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 export interface GetCars {
     __typename: 'Car';
     id: string;

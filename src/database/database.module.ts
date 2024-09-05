@@ -6,11 +6,11 @@ import { Connection } from 'typeorm';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'us-cdbr-east-06.cleardb.net',
+      host: 'localhost',
       port: 3306,
-      username: 'b804905095c658',
-      password: '92f0b026',
-      database: 'heroku_fff23362fb26883',
+      username: 'root',
+      password: 'mysql',
+      database: 'heroku',
       entities: [__dirname + '/../**/**/entities/*{.ts,.js}'],
       migrations: ['dist/migrations/*{.ts,.js}'],
     }),

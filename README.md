@@ -12,7 +12,7 @@ A link for the demo is given below:
 _.env variables_
 
 ```bash
-REACT_APP_APOLLO_URI=http://localhost:4000
+REACT_APP_APOLLO_URI=http://localhost:3000
 ```
 
 ## 🔥 Features
@@ -173,11 +173,19 @@ cd MERN_car_rental
 npm install # or, yarn install
 ```
 
+4. Build 
+```bash
+npm run heroku-postbuild
+```
+
 4. Run the app
 
 ```bash
-npm run dev # or, yarn dev
+npm run start:dev
 ```
+
+http://localhost:3000/graphql
+
 
 That's All!!! Now open [localhost:4000](http://localhost:4000/) to see the app.
 

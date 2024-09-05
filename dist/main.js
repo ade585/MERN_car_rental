@@ -11,7 +11,8 @@ async function bootstrap() {
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
         credentials: true
     });
-    await app.listen(process.env.PORT || 4000);
+    app.setGlobalPrefix('graphql');
+    await app.listen(process.env.PORT || 3000, () => console.log(`APP RUNNING ON PORT ${process.env.PORT} or 3000 `));
 }
 bootstrap();
 //# sourceMappingURL=main.js.map

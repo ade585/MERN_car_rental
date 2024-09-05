@@ -1,3 +1,4 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 import { createSlice } from '@reduxjs/toolkit';
 import { GetCars } from '../services/carsService/Requests/GetCars';
 

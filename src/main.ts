@@ -11,7 +11,7 @@ async function bootstrap() {
     credentials:true
   });
   app.setGlobalPrefix('graphql')
-  await app.listen(process.env.PORT || 4000,()=>console.log(`APP RUNNING ON PORT ${process.env.PORT}`));
+  await app.listen(process.env.PORT || 3000,()=>console.log(`APP RUNNING ON PORT ${process.env.PORT} or 3000 `));
 }
 bootstrap();
 

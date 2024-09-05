@@ -1,3 +1,4 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import HomeReducer from './HomeSlice';
 import reduxLogger from 'redux-logger';

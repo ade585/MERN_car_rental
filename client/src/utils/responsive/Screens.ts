@@ -1,3 +1,5 @@
+/*eslint linebreak-style: ["error", "windows"]*/
+
 export const ScreenSizes = {
   sm: '640px',
   md: '768px',
